@@ -9,6 +9,22 @@
   </head>
 
   <body>
+    <header>
+      <div class="top-image">
+        <%= image_tag("header_buis.png") %>
+      </div>
+      <div class="various_links">
+        <ul>
+          <li>
+            <%= link_to "PROFILE",profile_path %>
+            <%= link_to "SKILL",skill_path %>
+            <%= link_to "OUTPUT",output_path %>
+            <%= link_to "CONTACT",contact_path %>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <%= yield %>
   </body>
 </html>
