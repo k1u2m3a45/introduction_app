@@ -7,18 +7,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-<div class="site-box">
+<div class="container">
   <div class="top-image">
-    <%= image_tag("header_buis.png", class: "topimage") %>
+    <%= image_tag("header_buis.png", class: "buis") %>
   </div>
-  <nav class="various_links">
-    <ul>
-      <li><%= link_to "PROFILE", profile_path, class: "links" %></li>
-      <li><%= link_to "SKILL", skill_path, class: "links" %></li>
-      <li><%= link_to "OUTPUT", output_path, class: "links" %></li>
-      <li><%= link_to "CONTACT", contact_path, class: "links" %></li>
-    </ul>
-  </nav>
+  <ul class="various_links">
+    <li class="links"><%= link_to "PROFILE", profile_path %></li>
+    <li class="links"><%= link_to "SKILL", skill_path %></li>
+    <li class="links"><%= link_to "OUTPUT", output_path %></li>
+    <li class="links"><%= link_to "CONTACT", contact_path %></li>
+  </ul>
 
   <%= yield %>
 
