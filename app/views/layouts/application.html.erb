@@ -11,14 +11,14 @@
   <div class="top-image">
     <%= image_tag("header_buis.png", class: "topimage") %>
   </div>
-  <div class="various_links">
+  <nav class="various_links">
     <ul>
       <li><%= link_to "PROFILE", profile_path, class: "links" %></li>
       <li><%= link_to "SKILL", skill_path, class: "links" %></li>
       <li><%= link_to "OUTPUT", output_path, class: "links" %></li>
       <li><%= link_to "CONTACT", contact_path, class: "links" %></li>
     </ul>
-  </div>
+  </nav>
 
   <%= yield %>
 
