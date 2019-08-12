@@ -6,14 +6,42 @@
   width:100%;
 }
 
-
-li {
-  display:inline-block;
-  list-style: none;
-  margin-left:40px;
-  margin-bottom:40px
+header {
+    width:100vw;
 }
 
+
+ul{
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    float:left;
+    padding-left: 20px;
+}
+
+h1 {
+  margin-top:60px;
+}
+
+.links {
+  text-decoration: none;
+}
+
+
+/*以下レスポンシブ用*/
+
+@media screen and (max-width: 320px){
+/* 320px以下は２列 */
+li {
+    width: 50%;
+}
+}
 
 
 
