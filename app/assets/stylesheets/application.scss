@@ -13,7 +13,7 @@ body {
 .various_links {
   display: table;
   text-align: center;
-  margin: 0;
+  margin-top:30px;
   width: 100%;
 }
 
@@ -22,10 +22,38 @@ h1 {
 }
 
 .links {
-  margin: 0;
-  list-style: none;
+  margin:0;
+  list-style:none;
   display: table-cell;
+  font-size: 25px;
+}
+
+.links i {
+  margin-right: 10px;
+}
+
+.links a {
+  color:#333333;
   text-decoration: none;
+  position: relative;
+  display:inline-block;
+  transition: .3s;
+}
+
+.links a::after {
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  content: '';
+  width:0;
+  height:2px;
+  background-color: #31aae2;
+  transition:.3s;
+  transform: translateX(-50%);
+}
+
+.links a:hover::after {
+  width:100%;
 }
 
 /*以下レスポンシブ用*/
