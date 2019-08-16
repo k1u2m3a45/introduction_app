@@ -42,42 +42,42 @@ h1 {
   font-size: 28px;
   border-right: 1px $pink dashed;
 
-i {
-  margin-right: 10px;
-}
-
-a {
-  font-weight: bold;
-  color:$darkgray;
-  text-decoration: none;
-  position: relative;
-  display:inline-block;
-  transition: .3s;
-  letter-spacing: 1px;
-}
-
-a::after {
-  position: absolute;
-  bottom: -4px;
-  left:50%;
-  content: '';
-  width:0;
-  height:2px;
-  background-color: $blue;
-  transition:.3s;
-  transform: translateX(-50%);
-}
-
-a:hover::after {
-  width:120%;
-}
-
-a:hover{
-  text-shadow: 1px 2px 1px $lightgray;
-  .fas {
-    color:$blue;
+  i {
+    margin-right: 10px;
   }
-}
+
+  a {
+    font-weight: bold;
+    color:$darkgray;
+    text-decoration: none;
+    position: relative;
+    display:inline-block;
+    transition: .3s;
+    letter-spacing: 1px;
+  }
+
+  a::after {
+    position: absolute;
+    bottom: -4px;
+    left:50%;
+    content: '';
+    width:0;
+    height:2px;
+    background-color: $blue;
+    transition:.3s;
+    transform: translateX(-50%);
+  }
+
+  a:hover::after {
+    width:120%;
+  }
+
+  a:hover{
+    text-shadow: 1px 2px 1px $lightgray;
+    .fas {
+      color:$blue;
+    }
+  }
 }
 
 

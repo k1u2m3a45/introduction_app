@@ -8,7 +8,7 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-<div id="page_top"><a href="#"></a></div>
+<div id="page-top"><a href="#"></a></div>
 <div class="container">
   <div class="top-image">
     <%= link_to image_tag("topphoto-2.png", class: "topphoto"),root_path %>
@@ -16,25 +16,25 @@
 
   <ul class="various-links">
 
-    <li class="links profile">
+    <li class="links">
       <%= link_to profile_path do %>
       <i class="fas fa-child"></i>PROFILE
       <% end %>
     </li>
 
-    <li class="links skill">
+    <li class="links">
       <%= link_to skill_path do %>
       <i class="fas fa-code"></i>SKILL
       <% end %>
     </li>
 
-    <li class="links output">
+    <li class="links">
       <%= link_to output_path do %>
       <i class="fas fa-paper-plane"></i>OUTPUT
       <% end %>
     </li>
 
-    <li class="links contact">
+    <li class="links">
       <%= link_to contact_path do %>
       <i class="fas fa-envelope"></i>CONTACT
       <% end %>
@@ -46,14 +46,10 @@
 
 </div>
 
-
 <footer>
   <div class="footer-text">
     <small>&copy; 2019 Kana Matsumoto</small>
   </div>
 <footer>
-  
 </body>
-
-
 </html>
