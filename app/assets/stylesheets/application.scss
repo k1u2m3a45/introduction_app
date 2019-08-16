@@ -1,6 +1,9 @@
 body {
   margin: 0 0 0 0;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
 }
+
+/*topページ*/
 
 .container {
   width: 100vw;
@@ -16,17 +19,21 @@ body {
   margin-top:30px;
   width: 100%;
   padding-left: 0;
+  padding-bottom: 30px;
 }
 
 h1 {
   margin-top: 60px;
+  color: #333333;
+  text-align: center;
 }
 
 .links {
   margin:0;
   list-style:none;
   display: table-cell;
-  font-size: 25px;
+  font-size: 28px;
+  border-right: 1px #FF367F dashed;
 }
 
 .links i {
@@ -34,27 +41,79 @@ h1 {
 }
 
 .links a {
+  font-weight: bold;
   color:#333333;
   text-decoration: none;
   position: relative;
   display:inline-block;
   transition: .3s;
+  letter-spacing: 1px;
 }
 
 .links a::after {
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left:50%;
   content: '';
   width:0;
   height:2px;
-  background-color: #31aae2;
+  background-color: #6091d3;
   transition:.3s;
   transform: translateX(-50%);
 }
 
 .links a:hover::after {
+  width:120%;
+}
+
+.links a:hover{
+  text-shadow: 1px 2px 1px #808080;
+  .fas {
+    color:#6091d3;
+  }
+}
+
+
+
+.variouspage {
   width:100%;
+}
+
+/*profileページ*/
+.profilepage {
+  text-align: center;
+}
+
+.pagetitle {
+  text-align: center;
+  color: #333333;
+}
+
+.profiletext {
+  display: inline-block;
+  font-size: 20px;
+  padding:30px 30px;
+  line-height: 40px;
+  color: #333333;
+  background: #FFF;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+}
+
+.iconphoto {
+  max-width: 15%;
+  text-align: center;
+  margin: 10px 30px 50px 0px;
+}
+
+/*skillページ*/
+
+
+
+/*footer*/
+.footertext {
+  text-align: center;
+  margin:100px 0 10px 0;
 }
 
 /*以下レスポンシブ用*/
