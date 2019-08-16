@@ -8,19 +8,48 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
+<div id="page-top"><a href="#"></a></div>
 <div class="container">
   <div class="top-image">
-    <%= link_to image_tag("top_image.png", class: "topphoto"),root_path %>
+    <%= link_to image_tag("topphoto-2.png", class: "topphoto"),root_path %>
   </div>
-  <ul class="various_links">
-    <li class="links"><i class="fas fa-child"></i><%= link_to "PROFILE", profile_path %></li>
-    <li class="links"><i class="fas fa-code"></i><%= link_to "SKILL", skill_path %></li>
-    <li class="links"><i class="fas fa-paper-plane"></i><%= link_to "OUTPUT", output_path %></li>
-    <li class="links"><i class="fas fa-envelope"></i><%= link_to "CONTACT", contact_path %></li>
+
+  <ul class="various-links">
+
+    <li class="links">
+      <%= link_to profile_path do %>
+      <i class="fas fa-child"></i>PROFILE
+      <% end %>
+    </li>
+
+    <li class="links">
+      <%= link_to skill_path do %>
+      <i class="fas fa-code"></i>SKILL
+      <% end %>
+    </li>
+
+    <li class="links">
+      <%= link_to output_path do %>
+      <i class="fas fa-paper-plane"></i>OUTPUT
+      <% end %>
+    </li>
+
+    <li class="links">
+      <%= link_to contact_path do %>
+      <i class="fas fa-envelope"></i>CONTACT
+      <% end %>
+    </li>
+
   </ul>
 
   <%= yield %>
 
 </div>
+
+<footer>
+  <div class="footer-text">
+    <small>&copy; 2019 Kana Matsumoto</small>
+  </div>
+<footer>
 </body>
 </html>

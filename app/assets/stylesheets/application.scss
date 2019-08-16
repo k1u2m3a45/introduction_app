@@ -1,6 +1,16 @@
 body {
   margin: 0 0 0 0;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
 }
+
+/*color定義*/
+$darkgray : #303030;
+$lightgray : #808080;
+$pink : #FF367F;
+$blue : #6091d3;
+$white : #FFF;
+
+/*topページ*/
 
 .container {
   width: 100vw;
@@ -10,51 +20,106 @@ body {
   width: 100%;
 }
 
-.various_links {
+.various-links {
   display: table;
   text-align: center;
   margin-top:30px;
   width: 100%;
-  padding-left: 0;
+  padding: 0 0 30px 0;
+
 }
 
 h1 {
   margin-top: 60px;
+  color: $darkgray;
+  text-align: center;
 }
 
 .links {
   margin:0;
   list-style:none;
   display: table-cell;
-  font-size: 25px;
+  font-size: 28px;
+  border-right: 1px $pink dashed;
+
+  i {
+    margin-right: 10px;
+  }
+
+  a {
+    font-weight: bold;
+    color:$darkgray;
+    text-decoration: none;
+    position: relative;
+    display:inline-block;
+    transition: .3s;
+    letter-spacing: 1px;
+  }
+
+  a::after {
+    position: absolute;
+    bottom: -4px;
+    left:50%;
+    content: '';
+    width:0;
+    height:2px;
+    background-color: $blue;
+    transition:.3s;
+    transform: translateX(-50%);
+  }
+
+  a:hover::after {
+    width:120%;
+  }
+
+  a:hover{
+    text-shadow: 1px 2px 1px $lightgray;
+    .fas {
+      color:$blue;
+    }
+  }
 }
 
-.links i {
-  margin-right: 10px;
-}
 
-.links a {
-  color:#333333;
-  text-decoration: none;
-  position: relative;
-  display:inline-block;
-  transition: .3s;
-}
-
-.links a::after {
-  position: absolute;
-  bottom: 0;
-  left:50%;
-  content: '';
-  width:0;
-  height:2px;
-  background-color: #31aae2;
-  transition:.3s;
-  transform: translateX(-50%);
-}
-
-.links a:hover::after {
+.various-page {
   width:100%;
+}
+
+/*profileページ*/
+.profile-page {
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+  color: $darkgray;
+}
+
+.profile-text {
+  display: inline-block;
+  font-size: 20px;
+  padding:30px 30px;
+  line-height: 40px;
+  color: $darkgray;
+  background: $white;
+  border: solid 3px $blue;
+  border-radius: 10px;
+}
+
+.icon-photo {
+  max-width: 15%;
+  text-align: center;
+  margin: 10px 30px 50px 0px;
+}
+
+/*skillページ*/
+
+
+
+/*footer*/
+.footer-text {
+  text-align: center;
+  margin:100px 0 10px 0;
 }
 
 /*以下レスポンシブ用*/
