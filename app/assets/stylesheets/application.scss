@@ -3,6 +3,13 @@ body {
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
 }
 
+/*color定義*/
+$darkgray : #303030;
+$lightgray : #808080;
+$pink : #FF367F;
+$blue : #6091d3;
+$white : #FFF;
+
 /*topページ*/
 
 .container {
@@ -13,18 +20,18 @@ body {
   width: 100%;
 }
 
-.various_links {
+.various-links {
   display: table;
   text-align: center;
   margin-top:30px;
   width: 100%;
-  padding-left: 0;
-  padding-bottom: 30px;
+  padding: 0 0 30px 0;
+
 }
 
 h1 {
   margin-top: 60px;
-  color: #333333;
+  color: $darkgray;
   text-align: center;
 }
 
@@ -33,16 +40,15 @@ h1 {
   list-style:none;
   display: table-cell;
   font-size: 28px;
-  border-right: 1px #FF367F dashed;
-}
+  border-right: 1px $pink dashed;
 
-.links i {
+i {
   margin-right: 10px;
 }
 
-.links a {
+a {
   font-weight: bold;
-  color:#333333;
+  color:$darkgray;
   text-decoration: none;
   position: relative;
   display:inline-block;
@@ -50,57 +56,57 @@ h1 {
   letter-spacing: 1px;
 }
 
-.links a::after {
+a::after {
   position: absolute;
   bottom: -4px;
   left:50%;
   content: '';
   width:0;
   height:2px;
-  background-color: #6091d3;
+  background-color: $blue;
   transition:.3s;
   transform: translateX(-50%);
 }
 
-.links a:hover::after {
+a:hover::after {
   width:120%;
 }
 
-.links a:hover{
-  text-shadow: 1px 2px 1px #808080;
+a:hover{
+  text-shadow: 1px 2px 1px $lightgray;
   .fas {
-    color:#6091d3;
+    color:$blue;
   }
+}
 }
 
 
-
-.variouspage {
+.various-page {
   width:100%;
 }
 
 /*profileページ*/
-.profilepage {
+.profile-page {
   text-align: center;
 }
 
-.pagetitle {
+.page-title {
   text-align: center;
-  color: #333333;
+  color: $darkgray;
 }
 
-.profiletext {
+.profile-text {
   display: inline-block;
   font-size: 20px;
   padding:30px 30px;
   line-height: 40px;
-  color: #333333;
-  background: #FFF;
-  border: solid 3px #6091d3;
+  color: $darkgray;
+  background: $white;
+  border: solid 3px $blue;
   border-radius: 10px;
 }
 
-.iconphoto {
+.icon-photo {
   max-width: 15%;
   text-align: center;
   margin: 10px 30px 50px 0px;
@@ -111,7 +117,7 @@ h1 {
 
 
 /*footer*/
-.footertext {
+.footer-text {
   text-align: center;
   margin:100px 0 10px 0;
 }
